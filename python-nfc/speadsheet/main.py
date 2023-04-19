@@ -7,7 +7,7 @@ from google.oauth2.service_account import Credentials
 from datetime import datetime
 
 
-secret_credentials_json_oath =  R'C:\Users\oonuk\OneDrive\デスクトップ\python-nfc\speadsheet\speadsheet-384209-a8ef9c130ab1.json' 
+secret_credentials_json_oath = R'C:\Users\oonuk\OneDrive\デスクトップ\python-nfc\speadsheet\speadsheet-384209-a8ef9c130ab1.json' 
 
 scopes = [
     'https://www.googleapis.com/auth/spreadsheets',
@@ -68,6 +68,7 @@ time_str = current_time.strftime('%H:%M:%S')
 
 # デバイスのIDで行う場合
 device_id = socket.gethostname()
+
 # Raspberry Piのシリアル番号を取得
 # device_id = get_serial_number()
 
